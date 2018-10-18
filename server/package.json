@@ -1,0 +1,27 @@
+{
+  "name": "product-dashboard-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhadiahmed/product-dashboard.git"
+  },
+  "author": "Ahmed Elhady",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elhadiahmed/product-dashboard/issues"
+  },
+  "homepage": "https://github.com/elhadiahmed/product-dashboard#readme",
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.4",
+    "mongoose": "5.3.4"
+  }
+}
