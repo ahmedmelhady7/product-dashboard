@@ -12,4 +12,11 @@ module.exports = function(app) {
     .get(product.read_a_product)
     .put(product.update_a_product)
     .delete(product.delete_a_product);
+
+  app.route('/products/category/:categoryId')
+    .get(product.get_product_by_category)
+
+  app.route('/products/brand/:brandName')
+    .get(product.get_product_by_brand)
+
 };
