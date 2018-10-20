@@ -1,4 +1,5 @@
 let express    = require('express'),
+    cors       = require('cors'),
     app        = express(),
     port       = process.env.PORT || 3000,
     mongoose   = require('mongoose'),
@@ -9,7 +10,7 @@ let express    = require('express'),
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/products', { useNewUrlParser: true });
 
-
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
